@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+ .header {
+ 	font-size: 25px;
+ 	color: #02807C ;
+ 	text-align: center;
+ }
+
+
+.movie_message {
+	background-color: #02807C;
+	color: #FFF;
+	padding: 15px 55px;
+	border-radius: 25px;
+}
+
+li {
+	list-style: none;
+}
+
+ul > li {
+	font-size: 25px;
+	text-align: center;
+}
+
+ul > p {
+	font-size: 20px;
+	background-color: #25A69E;
+	padding: 2px 2px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+/* ----------------------- */
+
+/*.movie_example, table {
+	text-align: center;
+}
+
+.tab > tr {
+	text-align: center;
+}*/
