@@ -1,21 +1,22 @@
 <div class="header">
-<h1><%= @movies.size %> Movies</h1>
+<h1><%= pluralize(@movies.size, 'Movies') %></h1>
 </div>
 
-<ul class="movie_message">
+<div class="movie_message">
+<ul>
 	<% @movies.each do |movie| %>
 		<li>
 			<strong><%= movie.title %></strong> (<%= movie.rating %>) : <%= number_to_currency(movie.total_gross) %> 
 		</li>
 		<p>
-			<%= movie.description %>
+			<%= truncate(movie.description, length: 35, separator: ' ') %>
 		</p>
 		<p>
 			<%= movie.released_on %>
 		</p>
 	<% end %>
 </ul>
-
+</div>
 -------------------------------------------------------
 <!-- <div class="movie_example"> -->
 	<h1>Movies</h1>

@@ -14,7 +14,16 @@
  *= require_self
  */
 
- .header {
+ strong {
+ 	color: #8E0000;
+ 	font-size: 18px;
+ }
+
+.event_header {
+ 		text-align: center;
+ }
+
+.header {
  	font-size: 25px;
  	color: #02807C ;
  	text-align: center;
@@ -24,8 +33,12 @@
 .movie_message {
 	background-color: #02807C;
 	color: #FFF;
-	padding: 15px 55px;
+	padding: 15px 15px;
 	border-radius: 25px;
+}
+
+ul {
+	margin: 2px 2px;
 }
 
 li {
