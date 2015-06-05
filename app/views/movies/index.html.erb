@@ -6,7 +6,10 @@
 	<ul>
 		<% @movies.each do |movie| %>	
 			<li>
-				<%= movie.title %> (<%= movie.rating %>) : <%= format_total_gross(movie) %> 
+				<%= movie.title %> (<%= movie.rating %>) 
+			</li> 
+			<li>
+				<%= format_total_gross(movie) %> 
 			</li>
 			<p>
 				<%= truncate(movie.description, length: 88, separator: ' ') %><br/>
@@ -18,8 +21,6 @@
 
 -------------------------------------------------------
 <!-- <div class="movie_example"> -->
-	<h1>Movies</h1>
-
 	<% @movies.each do |movie| %>
 	  <article>
 	    <header>
